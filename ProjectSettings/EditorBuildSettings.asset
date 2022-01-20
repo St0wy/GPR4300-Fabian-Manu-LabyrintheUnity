@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/LabyrinthFabian.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 53d22bf75017fcf4f8670c71a8d45ac9
   - enabled: 1
     path: Assets/Scenes/LabyrinthFabian2.unity
     guid: 98c1fb487d45a2146828b34dc295a916
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: 22b1a5353cbe50e4b8f091a43ecc96f0
   m_configObjects: {}
