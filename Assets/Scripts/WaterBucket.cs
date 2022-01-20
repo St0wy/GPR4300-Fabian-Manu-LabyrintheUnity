@@ -1,23 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class WaterBucket : MonoBehaviour
+namespace LabyrintheUnity
 {
-    public SpriteRenderer _spriteRenderer;
-    public Sprite _sprite;
-
-    private void Start()
+    public class WaterBucket : MonoBehaviour
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
+        public SpriteRenderer _spriteRenderer;
+        public Sprite _sprite;
 
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.CompareTag("player"))
+        private void Start()
         {
-            _spriteRenderer.sprite = _sprite;
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if(collision.gameObject.CompareTag("player"))
+            {
+                _spriteRenderer.sprite = _sprite;
+            }
         }
     }
 }

@@ -1,15 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Key : MonoBehaviour
+namespace LabyrintheUnity
 {
-   
-    private void OnCollisionEnter(Collision collision)
+    public class Key : MonoBehaviour
     {
-        if (collision.gameObject.CompareTag("player"))
+   
+        private void OnCollisionEnter(Collision collision)
         {
-            Destroy(this.gameObject);
+            if (collision.gameObject.CompareTag("player"))
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
 }
