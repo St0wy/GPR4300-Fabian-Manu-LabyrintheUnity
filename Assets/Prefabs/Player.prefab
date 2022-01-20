@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 8849662423000701618}
   - component: {fileID: 8849662423000701619}
   - component: {fileID: 8849662423000701620}
+  - component: {fileID: 1414953416}
+  - component: {fileID: 1414953417}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -189,3 +191,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9246278, y: 0.9298681}
   m_EdgeRadius: 0
+--- !u!114 &1414953416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8849662423000701583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdd8dc28f8ad4e19b5c3680872a7e729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileToSet: {fileID: 11400000, guid: c585acd363c6a0145bc9bfc321828532, type: 2}
+  tilemap: {fileID: 0}
+  tilesToChange:
+  - {x: 4, y: 1, z: 0}
+  - {x: 5, y: -1, z: 0}
+  - {x: 7, y: 4, z: 0}
+--- !u!114 &1414953417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8849662423000701583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e77caaa873442548d4d296c0ca09d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

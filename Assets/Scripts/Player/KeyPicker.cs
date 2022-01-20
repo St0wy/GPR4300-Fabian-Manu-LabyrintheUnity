@@ -1,12 +1,11 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Tilemaps;
 
 namespace LabyrintheUnity.Player
 {
 	public class KeyPicker : MonoBehaviour
 	{
-		private bool hasKey = false;
+		private bool hasKey;
 		[SerializeField] private Tile tileToSet;
 		[SerializeField] private Tilemap tilemap;
 		[SerializeField] private Vector3Int[] tilesToChange;
